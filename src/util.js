@@ -20,3 +20,17 @@ export function post(url, body) {
             'Content-Type': 'application/json'},
     	body: JSON.stringify(body)});
 };
+
+export function get(qurl, params, token) {
+    const esc = encodeURIComponent;
+    const url = qurl + '?' + Object.keys(params)
+        .map(k => esc(k) + '=' + esc(params[k]))
+        .join('&');
+    console.log(url);
+    return fetch(url, {method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+			'x-access-token': token}});
+};
+

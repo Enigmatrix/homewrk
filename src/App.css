@@ -1,152 +1,154 @@
 .calendar{
-  font-family: Roboto;
-  overflow-y: overlay !important;
-  overflow-x: hidden;
-  width: 100%;
+    font-family: Roboto;
+    overflow-y: overlay !important;
+    overflow-x: hidden;
+    width: 100%;
+    background: white;
 }
 .main-content{
-  flex: 1 !important;
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 100%;
+    flex: 1 !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    background: #f1f1f1;
 }
 .header{
-  font-family: 'Roboto Slab', sans-serif !important;
-  padding-left: 12px !important;
-  padding-right: 20px !important;
-  max-width: 100vw;
+    font-family: 'Roboto Slab', sans-serif !important;
+    padding-left: 12px !important;
+    padding-right: 20px !important;
+    max-width: 100vw;
 }
 .App{
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
-  width: 100vw;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
 }
 .rbc-event-label{
-  visibility: collapse;
-  height: 0;
-  width: 0 !important;
+    visibility: collapse;
+    height: 0;
+    width: 0 !important;
 }
 .rbc-time-header > .rbc-row:first-child {
     border-bottom: 0 solid #DDD !important;
 }
 .rbc-header{
-  border-bottom: 1px solid #DDD !important;
+    border-bottom: 1px solid #DDD !important;
 }
 .rbc-header-gutter{
-  color: #a7a7a7;
+    color: #a7a7a7;
 }
 .rbc-time-view .rbc-time-gutter{
-  color: #a7a7a7;
-  border-right: 1px solid #DDD;
+    color: #a7a7a7;
+    border-right: 1px solid #DDD;
 }
 .rbc-event{
-  border-radius: 0 !important;
-  padding: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
 }
 .rbc-current-time-indicator{
-  background: orange !important;
+    background: orange !important;
 }
 .rbc-current-time-indicator::before{
-  background: orange !important;
+    background: orange !important;
 }
 .fill{
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 .marker{
-  float: left;
-  width: 3px;
-  height: 100%;
-  margin: -5px 0 0 0;
-  background: lightblue;
+    float: left;
+    width: 3px;
+    height: 100%;
+    margin: -5px 0 0 0;
+    background: lightblue;
 }
 .rbc-time-header{
-  background: #f7f7f7 !important;
+    background: #f7f7f7 !important;
 }
 .homework-badge{
-  padding: 0 16px 0 0 !important;
+    padding: 0 16px 0 0 !important;
 }
 .rbc-timeslot-group{
-  height: 60px;
+    height: 60px;
 }
 .homework-img{
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 .event-title{
-  margin: 5px;
-  display: block;
+    margin: 5px;
+    display: block;
 }
 .event-popup{
-  padding: 14px;
-  max-width: 400px;
+    padding: 14px;
+    max-width: 400px;
 }
 .event-popup-title{
-  font-size: 22px;
-  margin: 4px;
-  font-family: 'Roboto Slab';
+    font-size: 22px;
+    margin: 4px;
+    font-family: 'Roboto Slab';
 }
 .event-popup-desc{
-  font-size: 16;
-  margin: 4px;
+    font-size: 16;
+    margin: 4px;
 }
 .event-popup-timerange{
-  font-size: 14px;
-  margin: 4px;
-  color: #1565C0;
+    font-size: 14px;
+    margin: 4px;
+    color: #1565C0;
 }
 .event-popup-actions{
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .event-popup-action{
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 .vertical-layout{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .btn{
 }
 .link-btn{
-  color: white !important;
+    color: white !important;
 }
 .action-btn{
-  color: white !important;
+    color: white !important;
 }
 .login-bg{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  background: #03A9F4;
-  flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #03A9F4;
+    flex-direction: column;
 }
 .login-panel{
-  margin: auto;
-  display: block;
-  border-radius: 15px;
+    margin: auto;
+    display: block;
+    border-radius: 15px;
 }
 .login-form{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
 }
 .login-form > * {
-  margin: 10px;
+    margin: 10px;
 }
 input:-webkit-autofill {
-  
+
 }
 
 .no-highlight{
-  /* Styles */
+    /* Styles */
     border: none; /* Remove the default border */
-    box-shadow: 
-        inset 0 0 5px rgba(0,0,0,0.1),
-        inset 0 3px 2px rgba(0,0,0,0.1);
+    box-shadow:
+            inset 0 0 5px rgba(0,0,0,0.1),
+            inset 0 3px 2px rgba(0,0,0,0.1);
     border-radius: 3px;
     background: #f9f9f9;
     color: #777;
@@ -156,57 +158,106 @@ input:-webkit-autofill {
     margin: 20px;
 }
 .login-app-bar{
-  background: white !important;
-  color: #03A9F4 !important;
+    background: white !important;
+    color: #03A9F4 !important;
 }
 .fill-height{
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .login-app-bar *{
-  color: #03A9F4 !important;
-  fill: #03A9F4 !important;
+    color: #03A9F4 !important;
+    fill: #03A9F4 !important;
 }
 
 .nomatch-bg{
-  background: #D50000;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+    background: #D50000;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .nomatch-box{
-  margin: auto;
-  text-align: center;
-  color: white;
-  padding: 10px;
-  font-family: 'Roboto Slab', sans-serif !important;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: 'Roboto Slab', sans-serif !important;
 }
 
 .nomatch-redirect-btn *{
-  color: #D50000 !important;
+    color: #D50000 !important;
 }
 
 .alert-snackbar{
-  background: #D50000 !important;
+    background: #D50000 !important;
 }
 
 .alert-snackbar > *{
-  background: #D50000 !important;
+    background: #D50000 !important;
 }
 
 .horizontal-layout{
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  text-align: center;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    text-align: center;
 }
 
 .alert{
-  fill: white !important;
-  margin: 6px;
+    fill: white !important;
+    margin: 6px;
 }
 
 .flex-fill{
-  flex: 1;
+    flex: 1;
 }
+
+.list-module{
+    margin: 10px;
+    padding: 20px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-homework{
+    margin: 10px;
+    padding: 20px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-module-space{
+    flex: 1;
+}
+
+.list-module-code{
+    font-family: 'Roboto Slab', sans-serif;
+    display: inline;
+}
+
+.list-module-name{
+    font-family: 'Roboto Slab', sans-serif;
+    display: inline;
+}
+
+.list-module-desc{
+}
+
+.list-module-btn{
+    align-self: center;
+}
+
+.list-modules{
+    width: 80%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.module-fab{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+

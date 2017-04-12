@@ -15,19 +15,23 @@ import {
 } from 'react-router';
 import auth from './services/AuthService';
 class App extends Component {
-  fwd() {
-    this.context.router.push('/about');
-  }
-  bwd() {
-    console.log(this.context.router);
-  }
+    constructor(props){
+        super(props);
+        this.state = {bwd:undefined, fwd:undefined};
+    }
   logout(){
       auth.logout(() => {
           this.context.router.push('/login');
       })
   }
   static contextTypes = {
-      router: PropTypes.object.isRequired 
+      router: PropTypes.object.isRequired,
+      fwd: PropTypes.func,
+      bwd: PropTypes.func
+  }
+  withParent(obj){
+      obj.props.parent = this;
+      return obj;
   }
   render() {
     return (
@@ -57,16 +61,16 @@ class App extends Component {
                 </MediaQuery>
               </div>}
             iconElementLeft={
-              <div className="vertical-layout">
-                <IconButton className="btn">
-                  <ArrowBwdIcon color='white'
-                  onClick={this.bwd.bind(this)}/>
-                </IconButton> 
-                <IconButton className="btn">
-                  <ArrowFwdIcon color='white'
-                  onClick={this.fwd.bind(this)}/>
-                </IconButton>
-              </div>}
+                <div className="vertical-layout">
+                    <IconButton className="btn">
+                    <ArrowBwdIcon color='white'
+                        onClick={this.state.bwd}/>
+                    </IconButton>
+                    <IconButton className="btn">
+                        <ArrowFwdIcon color='white'
+                        onClick={this.state.fwd}/>
+                    </IconButton>
+                    </div>}
             iconElementRight={
               <div className="vertical-layout">
                 <FlatButton className="action-btn" label="today"/>
@@ -83,7 +87,7 @@ class App extends Component {
                 </IconMenu>
               </div>}/>
               
-                {this.props.children}
+                {this.withParent(this.props.children)}
             </div>
     );
   }

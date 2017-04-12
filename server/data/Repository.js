@@ -9,11 +9,10 @@ class Repository{
     static get connection(){
         if(!Repository._connection){
             Repository._connection = mysql.createPool({
-                connectionLimit : 10,
                 host            : 'localhost',
                 user            : 'root',
-                password        : '',
-                database        : 'homewrk'
+                password        : config.dbPassword,
+                database        : config.dbName
             });
         }
         return Repository._connection;

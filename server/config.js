@@ -1,3 +1,5 @@
 module.exports = {
-    secret: 'ilovemylittlepony'
+    secret: 'ilovemylittlepony',
+    dbPassword: '',
+    dbName: 'homewrk'
 }
