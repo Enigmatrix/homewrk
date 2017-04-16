@@ -108,7 +108,8 @@ app.get('/api/modules', (req, res) => {
 });
 
 app.get('/api/homework', (req, res) => {
-    hwRepo.homeworkSummary(req.decodedUser).then(hwSummary => {
+    let {nameQuery, startDate, endDate} = req.query;
+    hwRepo.homeworkSummary(req.decodedUser, nameQuery, startDate, endDate).then(hwSummary => {
         res.json(hwSummary);
     });
 });

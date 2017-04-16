@@ -220,13 +220,6 @@ input:-webkit-autofill {
     flex-direction: row;
 }
 
-.list-homework{
-    margin: 10px;
-    padding: 20px 10px 5px 10px;
-    display: flex;
-    flex-direction: row;
-}
-
 .list-module-space{
     flex: 1;
 }
@@ -248,11 +241,71 @@ input:-webkit-autofill {
     align-self: center;
 }
 
-.list-modules{
+.list-modules {
     width: 80%;
     min-width: 300px;
     max-width: 800px;
     margin: auto;
+}
+
+.list-homeworks {
+    width: 80%;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.list-homework{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-homework-space{
+    flex: 1;
+}
+
+.list-homework-box1{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-homework-module{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+.list-homework-box2{
+    display: flex;
+    flex-direction: row;
+}
+
+.list-homework-box-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+.list-homework-name{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size:24px;
+    display: inline;
+}
+
+.list-homework-desc{
+    font-size:12px;
+    display: inline;
+}
+
+.list-homework-earliest-deadline{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size:16px;
+    display: inline;
+    font-weight:bold;
 }
 
 .module-fab{
@@ -261,3 +314,50 @@ input:-webkit-autofill {
     bottom: 20px;
 }
 
+.searchfieldset{
+    margin: 10px;
+    width: calc(100% - 20px) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.searchfield{
+    width: calc(100% - 10px) !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.datefields{
+    display: flex;
+    flex-direction: row;
+}
+
+.search{
+    flex: 1;
+}
+
+.search-button{
+    margin: 0;
+}
+
+.dates{
+    flex: 1;
+    width: calc(50% - 10px) !important;
+}
+
+.list-homework-status{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background: #FF5722;
+    align-self: stretch;
+    margin: 0 20px 0 0;
+    padding: 5px;
+}
+
+.list-homework-status > *{
+    align-self: center;
+    flex:1;
+    font-size:18px;
+}

@@ -24,8 +24,9 @@ export function post(url, body) {
 export function get(qurl, params, token) {
     const esc = encodeURIComponent;
     const url = qurl + '?' + Object.keys(params)
-        .map(k => esc(k) + '=' + esc(params[k]))
-        .join('&');
+			.filter(k => params[k] != undefined)
+        	.map(k =>  esc(k) + '=' + esc(params[k]))
+        	.join('&');
     console.log(url);
     return fetch(url, {method: 'GET',
         headers: {

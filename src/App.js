@@ -25,9 +25,7 @@ class App extends Component {
       })
   }
   static contextTypes = {
-      router: PropTypes.object.isRequired,
-      fwd: PropTypes.func,
-      bwd: PropTypes.func
+      router: PropTypes.object.isRequired
   }
   withParent(obj){
       obj.props.parent = this;
