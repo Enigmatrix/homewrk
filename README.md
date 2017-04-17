@@ -2,6 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```npm install``` to install all dependencies first! then install create-react-app globally.
 
+![Login](/docs/login.PNG)
+![Schedule](/docs/schedule.PNG)
+![Homework](/docs/homework.PNG)
+![Module](/docs/module.PNG)
+
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
